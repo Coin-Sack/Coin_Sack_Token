@@ -55,7 +55,7 @@ h6 {
 p {
   color: #ffffff;
   font-family: Lato, Arial, Helvetica, sans-serif;
-  font-size: calc(0.7em + 0.8vw);
+  font-size: calc(0.5em + 0.8vw);
   -webkit-margin-before: 0.66em;
           margin-block-start: 0.66em;
   -webkit-margin-after: 0.66em;
@@ -70,13 +70,11 @@ a {
   font-family: inherit;
 }
 
-ul, ol {
-  color: #ffffff;
-}
-
 small {
   color: #ffffff;
   text-align: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: calc(0.4em + 0.6vw);
 }
 
 img {
@@ -99,7 +97,7 @@ img.clampv {
 }
 
 img.social {
-  max-width: 10vw;
+  max-width: 12vw;
   cursor: pointer;
 }
 
@@ -114,7 +112,7 @@ section.contrast {
   background-color: #ffffff;
 }
 
-section.contrast p, section.contrast h1, section.contrast h2, section.contrast h3, section.contrast h4, section.contrast h5, section.contrast h6, section.contrast a, section.contrast ul, section.contrast ol, section.contrast small {
+section.contrast p, section.contrast h1, section.contrast h2, section.contrast h3, section.contrast h4, section.contrast h5, section.contrast h6, section.contrast a, section.contrast small {
   color: #000000;
 }
 
