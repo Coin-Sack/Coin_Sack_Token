@@ -171,5 +171,10 @@ div.clamp {
   div.clamp {
     max-width: 100%;
   }
+  div.holdflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

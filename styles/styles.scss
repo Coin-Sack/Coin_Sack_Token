@@ -169,6 +169,10 @@ div {
         &.clamp {
             max-width: 100%;
         }
+
+        &.holdflex {
+            display: flex;
+        }
     }
 }
 
