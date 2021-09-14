@@ -1,0 +1,19 @@
+{
+  "name": "coinsack",
+  "version": "1.0.0",
+  "description": "Source code for the Coin Sack Project's smart contracts.",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile --all",
+    "migrate": "truffle migrate --network testnet --reset --compile-all",
+    "verify": "truffle run verify CoinSackToken --network testnet"
+  },
+  "author": "Stew",
+  "license": "MIT",
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "solc": "^0.8.7-fixed",
+    "truffle": "^5.4.1",
+    "truffle-plugin-verify": "^0.5.14"
+  }
+}
