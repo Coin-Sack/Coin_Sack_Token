@@ -5,8 +5,8 @@
   "main": "truffle-config.js",
   "scripts": {
     "compile": "truffle compile --all",
-    "migrate": "truffle migrate --network testnet --reset --compile-all",
-    "verify": "truffle run verify CoinSackToken --network testnet"
+    "migrate": "truffle migrate --network mainnet --reset --compile-all",
+    "verify": "truffle run verify CoinSackToken --network mainnet"
   },
   "author": "Stew",
   "license": "MIT",
