@@ -1,0 +1,175 @@
+@font-face {
+  font-family: Rye;
+  src: url(../media/Rye-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../media/Lato-Bold.ttf);
+}
+
+$darkColor: #000000;
+$lightColor: #ffffff;
+
+
+html, body {
+    background-color: $darkColor;
+    width: 100% !important;
+    min-height: 100vh !important;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+
+// Type & Text
+h1, h2, h3, h4, h5, h6 {
+    color: $lightColor;
+    font-family: Rye, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-block-start: 0.33em;
+    margin-block-end: 0.33em;
+}
+h1 {
+    font-size: calc(1.0em + 2.2vw);
+}
+h2 {
+   font-size: calc(1.0em + 1.8vw);
+}
+h3 {
+    font-size: calc(0.8em + 1.6vw);
+}
+h4 {
+    font-size: calc(0.8em + 1.3vw);
+}
+h5 {
+    font-size: calc(0.6em + 1.2vw);
+}
+h6 {
+    font-size: calc(0.6em + 1.0vw);
+}
+
+p {
+    color: $lightColor;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: calc(0.7em + 0.8vw);
+    margin-block-start: 0.66em;
+    margin-block-end: 0.66em;
+    text-align: center;
+}
+
+a {
+    color: $lightColor;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+ul, ol {
+    color: $lightColor;
+}
+
+small {
+    color: $lightColor
+}
+
+
+// Images
+img {
+    display: block;
+    margin: 0 auto;
+
+    &.icon {
+        width: 42px;
+        margin-top: 1.33em;
+        cursor: pointer;
+    }
+
+    &.clamph {
+        max-width: 99%;
+    }
+
+    &.clampv {
+        max-height: 28vh;
+    }
+
+    &.social {
+        max-width: 10vw;
+        cursor: pointer;
+    }
+}
+
+
+// Sections
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 1.33em;
+    padding-bottom: 0.33em;
+
+    &.contrast {
+        background-color: $lightColor;
+
+        p, h1, h2, h3, h4, h5, h6, a, ul, ol, small {
+            color: $darkColor;
+        }
+    }
+
+    &.clamp {
+        min-height: 0;
+        padding-bottom: 1.33em;
+    }
+}
+
+
+// Divs
+div {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    &.spaceout {
+        justify-content: space-around;
+    }
+
+    &.vcenter {
+        align-content: center;
+    }
+
+    &.container {
+        display: block;
+        max-width: 100%;
+
+        &.containerclamp {
+            max-width: 64%;
+        }
+    }
+
+    &.clamp {
+        max-width: 26%;
+    }
+}
+
+@media screen and (max-width: 986px) {
+    div {
+        display: block;
+        padding-left: 4%;
+        padding-right: 4%;
+        max-width: 92%;
+
+        &.container{
+            &.containerclamp {
+                width: 88%;
+            }
+        }
+
+        &.clamp {
+            max-width: 100%;
+        }
+    }
+}
+
+
