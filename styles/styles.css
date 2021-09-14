@@ -45,11 +45,11 @@ h4 {
 }
 
 h5 {
-  font-size: calc(0.6em + 1.2vw);
+  font-size: calc(0.5em + 1.2vw);
 }
 
 h6 {
-  font-size: calc(0.6em + 1.0vw);
+  font-size: calc(0.5em + 1.0vw);
 }
 
 p {
