@@ -71,7 +71,8 @@ ul, ol {
 }
 
 small {
-    color: $lightColor
+    color: $lightColor;
+    text-align: center;
 }
 
 
@@ -87,11 +88,11 @@ img {
     }
 
     &.clamph {
-        max-width: 99%;
+        max-width: 98%;
     }
 
     &.clampv {
-        max-height: 28vh;
+        max-height: 20vh;
     }
 
     &.social {
@@ -156,13 +157,13 @@ div {
 @media screen and (max-width: 986px) {
     div {
         display: block;
-        padding-left: 4%;
-        padding-right: 4%;
-        max-width: 92%;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
 
         &.container{
             &.containerclamp {
-                width: 88%;
+                max-width: 100%;
             }
         }
 

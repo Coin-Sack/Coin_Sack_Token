@@ -76,6 +76,7 @@ ul, ol {
 
 small {
   color: #ffffff;
+  text-align: center;
 }
 
 img {
@@ -90,11 +91,11 @@ img.icon {
 }
 
 img.clamph {
-  max-width: 99%;
+  max-width: 98%;
 }
 
 img.clampv {
-  max-height: 28vh;
+  max-height: 20vh;
 }
 
 img.social {
@@ -161,12 +162,12 @@ div.clamp {
 @media screen and (max-width: 986px) {
   div {
     display: block;
-    padding-left: 4%;
-    padding-right: 4%;
-    max-width: 92%;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
   }
   div.container.containerclamp {
-    width: 88%;
+    max-width: 100%;
   }
   div.clamp {
     max-width: 100%;
