@@ -1,5 +1,5 @@
 {
-  "name": "coinsack",
+  "name": "coin-sack-token",
   "version": "1.0.0",
   "description": "Source code for the CS BEP-20 smart contract.",
   "main": "truffle-config.js",
