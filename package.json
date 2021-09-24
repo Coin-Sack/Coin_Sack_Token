@@ -1,7 +1,7 @@
 {
   "name": "coinsack",
   "version": "1.0.0",
-  "description": "Source code for the Coin Sack Project's smart contracts.",
+  "description": "Source code for the CS BEP-20 smart contract.",
   "main": "truffle-config.js",
   "scripts": {
     "compile": "truffle compile --all",
