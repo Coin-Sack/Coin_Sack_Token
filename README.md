@@ -52,7 +52,7 @@ ___
 ###### `event ReflectTokens(uint256 amountTokens)`
 ###### `modifier internalSwapLock()`
 
-### BEP20 Token Interface
+## ` `
 ###### `function name() external view returns (string memory)`
 ###### `function symbol() external view returns (string memory)`
 ###### `function decimals() external view returns (uint8)`
@@ -65,8 +65,7 @@ ___
 ###### `event Approval(address indexed owner, address indexed spender, uint value)`
 ###### `event Transfer(address indexed from, address indexed to, uint value)`
 
-### Callable & Manageable Contexts
-#### `contract Callable`
+## `contract Callable`
 ###### `function _contextAddress() internal view returns (address payable)`
 ###### `function _contextCreator() internal view returns (address)`
 ###### `function _msgSender() internal view returns (address payable)`
@@ -74,7 +73,8 @@ ___
 ###### `function _msgTimestamp() internal view returns (uint256)`
 ###### `receive() external payable`
 ###### `event CreateContext(address contextAddress, address contextCreator)`
-#### `contract Manageable is Callable`
+
+## `contract Manageable is Callable`
 ###### `function executiveManager() public view returns (address)`
 ###### `function isManager(address account) public view returns (bool)`
 ###### `function managementIsLocked() public view returns (bool)`
