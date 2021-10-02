@@ -8,10 +8,6 @@ ___
 _\*Contact the Coin Sack team via [Tetegram](https://t.me/coinsack) to for instructions to obtain Testnet CS and participate in test deployments._
 ___
 
-## Features & Behaviors
-...
-___
-
 ## `contract CoinSackToken is IBEP20, Manageable`
 
 ###### `constructor(address pancakeRouter)`
