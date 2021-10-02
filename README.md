@@ -8,8 +8,53 @@ ___
 _\*Contact the Coin Sack team via [Tetegram](https://t.me/coinsack) to for instructions to obtain Testnet CS and participate in test deployments._
 ___
 
+## Features & Behaviors
+...
+___
+
 ## `contract CoinSackToken is IBEP20, Manageable`
-###### ` `
+
+###### `constructor(address pancakeRouter)`
+###### `function increaseAllowance(address spender, uint256 amount) public returns (bool)`
+###### `function decreaseAllowance(address spender, uint256 amount) public returns (bool)`
+###### `function isExcludedFromReflections(address account)`
+###### `function isExcludedFromFees(address account) public view returns (bool)`
+###### `function isExcludedFromLimits(address account) public view returns (bool)`
+###### `function excludeFromReflections(address account) public onlyManagement() returns (bool)`
+###### `function includeInReflections(address account) public onlyManagement() returns (bool)`
+###### `function excludeFromFees(address account) public onlyManagement() returns (bool)`
+###### `function includeInFees(address account) public onlyManagement() returns (bool)`
+###### `function excludeFromLimits(address account) public onlyManagement() returns (bool)`
+###### `function includeInLimits(address account) public onlyManagement() returns (bool)`
+###### `function addManagementFeesReciever(address managementFeesReciever) public onlyManagement() returns (bool)`
+###### `function removeManagementFeesReciever(address managementFeesReciever) public onlyManagement() returns (bool)`
+###### `function setFeesEnabled(bool areFeesEnabled) public onlyManagement() returns (bool)`
+###### `function setFeesEnabled(bool areFeesEnabled, bool isAutoFeeLiquifyEnabled) public onlyManagement() returns (bool)`
+###### `function setManagementFeeBuy(uint256 managementFeeBuy) public onlyManagement() returns (bool)`
+###### `function setManagementFeeSell(uint256 managementFeeSell) public onlyManagement() returns (bool)`
+###### `function setReserveFeeBuy(uint256 reserveFeeBuy) public onlyManagement() returns (bool)`
+###### `function setReserveFeeSell(uint256 reserveFeeSell) public onlyManagement() returns (bool)`
+###### `function setReflectionsFeeBuy(uint256 reflectionsFeeBuy) public onlyManagement() returns (bool)`
+###### `function setReflectionsFeeSell(uint256 reflectionsFeeSell) public onlyManagement() returns (bool)`
+###### `function setAutoFeeLiquifyEnabled(bool isAutoFeeLiquifyEnabled) public onlyManagement() returns (bool)`
+###### `function setAutoLiquifyFactor(uint256 autoLiquifyFactor) public onlyManagement() returns (bool)`
+###### `function setMinPendingFeesForAutoLiquify(uint256 minPendingFeesForAutoLiquify) public onlyManagement() returns (bool)`
+###### `function setAutoBuybackEnabled(bool isAutoBuybackEnabled) public onlyManagement() returns (bool)`
+###### `function setMinReserveETHForAutoBuyback(uint256 minReserveETHForAutoBuyback) public onlyManagement() returns (bool)`
+###### `function setAutoBuybackFactor(uint256 autoBuybackFactor) public onlyManagement() returns (bool)`
+###### `function setAutoReinjectEnabled(bool isAutoReinjectEnabled) public onlyManagement() returns (bool)`
+###### `function setMinReserveETHForAutoReinject(uint256 minReserveETHForAutoReinject) public onlyManagement() returns (bool)`
+###### `function setAutoReinjectFactor(uint256 autoReinjectFactor) public onlyManagement() returns (bool)`
+###### `function setLimitsEnabled(bool areLimitsEnabled) public onlyManagement() returns (bool)`
+###### `function setMaxTransferAmount(uint256 maxTransferAmount) public onlyManagement() returns (bool)`
+###### `function performManualTokenBuyback(uint256 buybackFactor) public onlyManagement() returns (bool)`
+###### `function performManualFeeLiquidation(uint256 liquifyFactor) public onlyManagement() returns (bool)`
+###### `function performManualDeadTokenReinjecton(uint256 reinjectFactor) public onlyManagement() returns (bool)`
+###### `event SwapTokensForETH(uint256 amountTokens, address[] path)`
+###### `event SwapETHForTokens(uint256 amountETH, address[] path)`
+###### `event MintTokens(uint256 amountTokens)`
+###### `event ReflectTokens(uint256 amountTokens)`
+###### `modifier internalSwapLock()`
 
 ### BEP20 Token Interface
 ###### `function name() external view returns (string memory)`
@@ -56,7 +101,7 @@ ___
 
 ## Project Source
 
-Source code files for The Coin Sack token's smart contract can be found in the `contracts` project subdirectory. Contracts are built / deployed using the Truffle suite; compiled using solc version 0.8.7. 
+Source code files for The Coin Sack token's smart contract can be found in the `contracts` subdirectory. Contracts are built / deployed using the Truffle suite; compiled using solc version 0.8.7. 
 
 This project's Truffle suite configuration can be found in the `truffle-config.js` file; the Node package configuration is set within the `package.json` file. Package scripts to call common truffle commands are setup:
 ```
